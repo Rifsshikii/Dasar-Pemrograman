@@ -4,6 +4,7 @@ class PembayaranSPP:
         self.kelas = kelas
         self.bulan = bulan
         self.jumlah = jumlah
+        self.spp = 200000
 
     def tampilkan_struk(self):
         print("\n=== STRUK PEMBAYARAN SPP ===")
@@ -11,7 +12,15 @@ class PembayaranSPP:
         print("Kelas      :", self.kelas)
         print("Bulan      :", self.bulan)
         print("Jumlah     : Rp", self.jumlah)
-        print("Status     : LUNAS")
+
+        if self.jumlah < self.spp:
+            print("Status     : UANG ANDA KURANG")
+            print("Kekurangan : Rp", self.spp - self.jumlah)
+        elif self.jumlah > self.spp:
+            print("Status     : UANG ANDA BERLEBIH")
+            print("Kelebihan  : Rp", self.jumlah - self.spp)
+        else:
+            print("Status     : LUNAS")
 
 
 nama = input("Masukkan nama siswa   : ")
@@ -20,4 +29,4 @@ bulan = input("Masukkan bulan bayar  : ")
 jumlah = int(input("Masukkan jumlah SPP   : "))
 
 spp = PembayaranSPP(nama, kelas, bulan, jumlah)
-spp.tampilkan_struk() 
+spp.tampilkan_struk()
