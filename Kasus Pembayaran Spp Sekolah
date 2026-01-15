@@ -1,0 +1,23 @@
+class PembayaranSPP:
+    def __init__(self, nama, kelas, bulan, jumlah):
+        self.nama = nama
+        self.kelas = kelas
+        self.bulan = bulan
+        self.jumlah = jumlah
+
+    def tampilkan_struk(self):
+        print("\n=== STRUK PEMBAYARAN SPP ===")
+        print("Nama Siswa :", self.nama)
+        print("Kelas      :", self.kelas)
+        print("Bulan      :", self.bulan)
+        print("Jumlah     : Rp", self.jumlah)
+        print("Status     : LUNAS")
+
+
+nama = input("Masukkan nama siswa   : ")
+kelas = input("Masukkan kelas siswa  : ")
+bulan = input("Masukkan bulan bayar  : ")
+jumlah = int(input("Masukkan jumlah SPP   : "))
+
+spp = PembayaranSPP(nama, kelas, bulan, jumlah)
+spp.tampilkan_struk()
