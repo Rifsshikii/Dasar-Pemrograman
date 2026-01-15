@@ -20,4 +20,4 @@ bulan = input("Masukkan bulan bayar  : ")
 jumlah = int(input("Masukkan jumlah SPP   : "))
 
 spp = PembayaranSPP(nama, kelas, bulan, jumlah)
-spp.tampilkan_struk()
+spp.tampilkan_struk() 
