@@ -1,0 +1,35 @@
+class Hewan:
+    def __init__(self, nama):
+        self.nama = nama
+
+    def makan(self):
+        print(self.nama, "sedang makan")
+
+    def bergerak(self):
+        print(self.nama, "sedang bergerak")
+
+
+class Kucing(Hewan):
+    def bersuara(self):
+        print(self.nama, "mengeong")
+
+
+class Burung(Hewan):
+    def bergerak(self):
+        print(self.nama, "sedang terbang")
+
+    def bersuara(self):
+        print(self.nama, "berkicau")
+
+
+# Program utama
+kucing1 = Kucing("Milo")
+burung1 = Burung("Rio")
+
+kucing1.makan()
+kucing1.bergerak()
+kucing1.bersuara()
+
+burung1.makan()
+burung1.bergerak()
+burung1.bersuara()
