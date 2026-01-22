@@ -27,4 +27,4 @@ anak = Anak("Rifqi")
 
 ayah.peran()
 ibu.peran()
-anak.peran(
+anak.peran() 
