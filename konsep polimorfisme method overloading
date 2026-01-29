@@ -1,0 +1,9 @@
+class Hitung:
+    def jumlah(self, a, b=0, c=0):
+        return a + b + c
+
+hitung = Hitung()
+
+print(hitung.jumlah(5))
+print(hitung.jumlah(5, 10))
+print(hitung.jumlah(5, 10, 15))
