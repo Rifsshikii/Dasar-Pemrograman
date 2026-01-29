@@ -1,0 +1,29 @@
+# Class induk
+class Anggota:
+    def kerja_bakti(self):
+        print("Anggota sedang membantu kerja bakti.")
+
+# Class anak 1
+class Rifqi(Anggota):
+    def kerja_bakti(self):
+        print("Rifqi menyapu halaman sekolah.")
+
+# Class anak 2
+class Vicko(Anggota):
+    def kerja_bakti(self):
+        print("Vicko mengangkat dan membuang sampah.")
+
+# Class anak 3
+class Ahmad(Anggota):
+    def kerja_bakti(self):
+        print("Ahmad membersihkan selokan.")
+
+# Polimorfisme (objek berbeda, method sama)
+anggota_kerja_bakti = [
+    Rifqi(),
+    Vicko(),
+    Ahmad()
+]
+
+for anggota in anggota_kerja_bakti:
+    anggota.kerja_bakti()
